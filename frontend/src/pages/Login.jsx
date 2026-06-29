@@ -29,7 +29,7 @@ function Login() {
     const { error } = await supabase.auth.signInWithOAuth({
       provider: "google",
       options: {
-        redirectTo: "https://quiz-dashboard-pi.vercel.app",
+        redirectTo: "https://quiz-dashboard-pi.vercel.app/dashboard",
       },
     });
 

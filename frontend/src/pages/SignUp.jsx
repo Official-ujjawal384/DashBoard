@@ -58,7 +58,7 @@ export default function Signup() {
     const { error } = await supabase.auth.signInWithOAuth({
       provider: "google",
       options: {
-        redirectTo: "http://localhost:5173/dashboard",
+        redirectTo: "https://quiz-dashboard-pi.vercel.app/dashboard",
       },
     });
 
